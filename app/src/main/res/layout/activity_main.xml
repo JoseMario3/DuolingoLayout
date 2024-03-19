@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="55dp"
+        android:contentDescription="@string/treasurePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duotreasure" />
+
+    <TextView
+        android:id="@+id/dailyGoal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="@string/dailyGoal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/lessonComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/lessonComplete"
+        app:layout_constraintEnd_toEndOf="@+id/dailyGoal"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="@+id/dailyGoal"
+        app:layout_constraintTop_toBottomOf="@+id/dailyGoal" />
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tenXP"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        app:layout_constraintStart_toEndOf="@+id/lessonComplete"
+        app:layout_constraintTop_toBottomOf="@+id/dailyGoal" />
+
+    <TextView
+        android:id="@+id/combo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/combo"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="468dp"
+        app:layout_constraintStart_toStartOf="@+id/lessonComplete"
+        app:layout_constraintEnd_toEndOf="@+id/lessonComplete"
+        app:layout_constraintTop_toBottomOf="@+id/lessonComplete"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/twoXP"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        app:layout_constraintStart_toEndOf="@+id/combo"
+        app:layout_constraintTop_toBottomOf="@+id/ten" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/continueText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/combo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DuolingoGoalPage</string>
+    <string name="treasurePic">Pic of Treasure. Grr</string>
+    <string name="dailyGoal">You reached your daily goal!</string>
+    <string name="lessonComplete">Lesson complete!</string>
+    <string name="tenXP">+10 XP</string>
+    <string name="combo">Combo bonus!</string>
+    <string name="twoXP">+2 XP</string>
+    <string name="continueText">Continue</string>
+</resources>
